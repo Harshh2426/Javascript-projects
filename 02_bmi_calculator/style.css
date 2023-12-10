@@ -98,17 +98,15 @@ input:focus {
 
 @media only screen and (max-width: 600px){
     .container {
-        background-color: red;
+        
         width: 50vh;
-        height: 80vh;
-        background-color: #797978;
-        display: flex;
-        align-items: center;
-        justify-content: center;
       }
       .twoBox{
           text-align: center;
-          width: 100%;
+          & label{
+            display: inline-block;
+              width: 100%;
+          }
           /* background-color: red; */
       }
       .box>h1{
@@ -117,6 +115,7 @@ input:focus {
       }
       
       label {
+        text-align: center;
         font-size: 22px;
       }
       
