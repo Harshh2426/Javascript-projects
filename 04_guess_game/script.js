@@ -14,7 +14,6 @@ let btn = document.querySelector(".guessSubmit");
 btn.addEventListener("click", (e) => {
   e.preventDefault();
   guesses.innerHTML = prev;
-  console.log(answer);
   let enterVal = Number.parseInt(guessField.value);
   if (chances <= 0) {
     document.body.classList.add("lost");
@@ -32,3 +31,9 @@ btn.addEventListener("click", (e) => {
     lastResult.innerHTML = chances;
   }
 });
+
+guessField.addEventListener("focus",(e)=>{
+    if(e.target.value.length>0){
+        e.target.value="";
+    }
+})
