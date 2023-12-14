@@ -1,15 +1,15 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   background-color: rgb(46, 45, 45);
   color: white;
   font-family: sans-serif;
@@ -18,7 +18,7 @@ body{
   overflow: hidden;
 }
 
-.win{
+.win {
   position: absolute;
   top: 0;
   left: 0;
@@ -30,12 +30,12 @@ body{
   display: none;
 }
 
-.win img{
+.win img {
   width: 100vw;
   height: 100vh;
 }
 
-.winnerHeading{
+.winnerHeading {
   position: absolute;
   font-size: 15vw;
   color: black;
@@ -43,26 +43,24 @@ body{
   -webkit-text-stroke: 3px #fff;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  
+  transform: translate(-50%, -50%);
 }
 
-#wrapper{
+#wrapper {
   background-color: black;
   max-width: 500px;
   padding: 30px;
   box-shadow: 3px 3px 12px 5px white;
 }
-.loser{
+.loser {
   width: 100vw;
   height: 100vh;
   background-color: red;
   display: none;
   position: absolute;
-
 }
 
-.loserHeading{
+.loserHeading {
   position: absolute;
   font-size: 10vw;
   color: black;
@@ -70,39 +68,39 @@ body{
   -webkit-text-stroke: 2px #fff;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
-.heading{
+.heading {
   font-size: 40px;
   padding: 10px;
+  background-color: red;
 }
 
-.smallHeading{
+.smallHeading {
   display: inline-block;
   width: 100%;
   font-size: 25px;
   padding: 5px;
 }
 
-#guessStatement{
+#guessStatement {
   font-size: 28px;
   color: rgb(255, 0, 0);
 }
 
-#guessField{
+#guessField {
   font-size: 30px;
   width: 25%;
   padding: 2px 5px;
   margin: 20px 0px;
-
 }
 
-#guessField:focus{
+#guessField:focus {
   outline: none;
 }
 
-.guessSubmit{
+.guessSubmit {
   padding: 7px 14px;
   font-size: 25px;
   font-weight: 600;
@@ -113,33 +111,92 @@ body{
   cursor: pointer;
 }
 
-.guessSubmit:hover{
+.guessSubmit:hover {
   background-color: rgb(168, 199, 225);
 }
 
-#guessLabel{
+#guessLabel {
   margin: 10px 0px;
 }
 
-#subt{
+#subt {
   margin: 10px 0px;
 }
 
-.output1{
+.output1 {
   font-size: 23px;
   margin: 10px;
 }
-.output2{
+.output2 {
   font-size: 23px;
   margin-bottom: 20px;
 }
 
-
-body.winner .win{
+body.winner .win {
   display: block;
 }
 
-body.lost .loser{
+body.lost .loser {
   display: block;
 }
 
+@media only screen and (max-width: 600px) {
+  .winnerHeading {
+    font-size: 12vw;
+    font-weight: 600;
+  }
+
+  #wrapper {
+    background-color: black;
+    max-width: 80%;
+    padding: 10px;
+  }
+
+  .loserHeading {
+    font-size: 8vw;
+
+    font-weight: 600;
+  }
+
+  .heading {
+    font-size: 30px;
+    padding: 5px;
+  }
+
+  .smallHeading {
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  #guessStatement {
+    font-size: 23px;
+  }
+
+  #guessField {
+    font-size: 25px;
+    padding: 2px 5px;
+    margin: 10px 0px;
+  }
+
+  .guessSubmit {
+    padding: 5px 10px;
+    font-size: 20px;
+  }
+
+  #guessLabel {
+    margin: 5px 0px;
+  }
+
+  #subt {
+    margin: 10px 0px;
+  }
+
+  .output1 {
+    font-size: 18px;
+    margin: 5px;
+  }
+  .output2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
