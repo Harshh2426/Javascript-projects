@@ -1,0 +1,143 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background-color: rgb(46, 45, 45);
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+.win{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  display: none;
+}
+
+.win img{
+  width: 100vw;
+  height: 100vh;
+}
+
+.winnerHeading{
+  position: absolute;
+  font-size: 15vw;
+  color: black;
+  font-weight: 800;
+  -webkit-text-stroke: 3px #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+}
+
+#wrapper{
+  background-color: black;
+  max-width: 500px;
+  padding: 30px;
+  box-shadow: 3px 3px 12px 5px white;
+}
+.loser{
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+  display: none;
+  position: absolute;
+}
+
+.loserHeading{
+  position: absolute;
+  font-size: 10vw;
+  color: black;
+  font-weight: 800;
+  -webkit-text-stroke: 2px #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.heading{
+  font-size: 40px;
+  padding: 10px;
+}
+
+.smallHeading{
+  display: inline-block;
+  width: 100%;
+  font-size: 25px;
+  padding: 5px;
+}
+
+#guessStatement{
+  font-size: 28px;
+  color: rgb(255, 0, 0);
+}
+
+#guessField{
+  font-size: 30px;
+  width: 25%;
+  padding: 2px 5px;
+  margin: 20px 0px;
+
+}
+
+#guessField:focus{
+  outline: none;
+}
+
+.guessSubmit{
+  padding: 7px 14px;
+  font-size: 25px;
+  font-weight: 600;
+  border: 0px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.guessSubmit:hover{
+  background-color: rgb(168, 199, 225);
+}
+
+#guessLabel{
+  margin: 10px 0px;
+}
+
+#subt{
+  margin: 10px 0px;
+}
+
+.output1{
+  font-size: 23px;
+  margin: 10px;
+}
+.output2{
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+
+body.winner .win{
+  display: block;
+}
+
+body.lost .loser{
+  display: block;
+}
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="lost">    
+    <div class="win">
+        <p class="winnerHeading">Winner</p>
+        <img src="./win.gif" alt="" srcset="">
+    </div>
+    <div class="loser">
+        <p class="loserHeading">You lose the game</p>
+    </div>
+    <div id="wrapper">
+        <h1 class="heading">Number Guessing Game</h1>
+        <p class="smallHeading">Try and guess a random number between 1 and 100.</p>
+        <p class="smallHeading">You have 10 attempts to guess the right number.</p>
+    
+        <form class="form">
+            <div id="guessLabel">
+
+                <label2 for="guessField" id="guessStatement">Guess a number</label>
+            </div>
+            <div>
+
+                <input type="text" id="guessField" class="guessField">
+            </div>
+            <div>
+
+                <input type="submit" id="subt" value="Submit guess" class="guessSubmit">
+            </div>
+        </form>
+
+        <div class="resultParas">
+            <p class="output1">Previous Guesses: <span class="guesses"></span></p>
+            <p class="output2">Guesses Remaining: <span class="lastResult">10</span></p>
+            <p class="lowOrHi"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
